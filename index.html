@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>You Will Explode If You Stop Talking</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,user-scalable=no" />
+		<link rel="icon" href="/static/favicon_alt.ico" type="image/x-icon" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Special+Elite&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			@font-face {
+				font-family: "dseg7";
+				src: url("dseg7.woff") format("woff");
+				font-weight: normal;
+				font-style: normal;
+			}
+			body {
+				align-items: center;
+				display: flex;
+				justify-content: center;
+				min-height: 600px;
+				min-width: 1000px;
+			}
+			#wrapper {
+				height: 600px;
+				margin: 0 auto;
+				position: relative;
+				width: 1000px;
+			}
+			canvas {
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body style="background: #000">
+		<div id="wrapper">
+			<canvas id="gameCanvas"
+				>You need a modern browser with canvas support to access this
+				puzzle.</canvas
+			>
+		</div>
+		<canvas id="scratchOld" style="display: none"></canvas>
+		<canvas id="scratchNew" style="display: none"></canvas>
+		<canvas id="scratch3d" style="display: none"></canvas>
+		<audio src="audio/beep.mp3" id="beep"></audio>
+		<audio src="audio/strike.mp3" id="strike"></audio>
+		<audio src="audio/win.mp3" id="win"></audio>
+		<script type="module" src="dist/main.js"></script>
+	</body>
+</html>
